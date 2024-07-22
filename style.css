@@ -1,0 +1,139 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+width: 100%;
+min-height: 100%;
+}
+.container{display: flex;
+    flex-direction: row;
+height: 100vh;
+width: 100%;
+background-image: url(https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+width: 50%;
+height: 100%;
+background-image: url(https://images.unsplash.com/photo-1503756234508-e32369269deb?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
+.right{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-image: url(https://images.unsplash.com/photo-1619118986411-29b465253365?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover;
+background-position: contain;
+background-repeat: no-repeat;
+width: 50%;
+height: 100%;
+
+}
+.left>nav{
+display: flex;
+justify-content: end;
+padding: 5%;
+gap: 0 5%;
+}
+.left>nav>h1{
+display: none;
+
+}
+.left>nav>button{
+    padding:.5vmax 1vmax;
+    border: none;
+    border-radius: 1vmax;
+    font-size: 1.3vmax;
+    background-color: rgba(255, 255, 255, 0.397);
+}
+.left>nav>i{
+
+font-size: 4vh;
+}
+.right>h1{
+color: white;
+
+
+}
+.right>button{
+    margin-top: 2%;
+padding: 1vh 2vh;
+border-radius: 1vh;
+border: none;
+}
+@media screen  and (max-width:600px) {
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.left,
+.right{
+width: 100%;
+height: 100vh;
+
+
+}
+.left>nav>i{
+
+font-size: 2vmax;
+
+}
+.right>h1{
+text-align: center;
+font-family: helvetica;
+font-weight: 100;
+}
+
+.right>button{
+background-color: rgba(245, 245, 250, 0.384);
+color: rgb(9, 7, 7);
+font-size: 2vmax;
+font-weight: 500;
+font-family: helvetica;
+}
+.left>nav>button{
+padding: 1vmax 2vmax;
+font-size: 2vmax;
+
+}
+.left>nav>i{
+font-size: 2.5vmax;
+margin-top: 1vh;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
